@@ -1,0 +1,1 @@
+Created using laravel react template. Then installed laravel [wayfinder](https://github.com/laravel/wayfinder) following the guide in the readme. I then removed ziggy routes and implemented wayfinder routes in their place.
