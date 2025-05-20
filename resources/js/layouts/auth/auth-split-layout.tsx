@@ -2,7 +2,7 @@ import AppLogoIcon from '@/components/app-logo-icon';
 import { type SharedData } from '@/types';
 import { Link, usePage } from '@inertiajs/react';
 import { type PropsWithChildren } from 'react';
-import { home } from '@/routes/home';
+import { home } from '@/routes';
 
 interface AuthLayoutProps {
     title?: string;

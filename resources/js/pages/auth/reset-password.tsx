@@ -7,7 +7,7 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import AuthLayout from '@/layouts/auth-layout';
-import password from '@/routes/password';
+import { store } from '@/routes/password';
 
 interface ResetPasswordProps {
     token: string;
@@ -31,7 +31,7 @@ export default function ResetPassword({ token, email }: ResetPasswordProps) {
 
     const submit: FormEventHandler = (e) => {
         e.preventDefault();
-        post(password.store().url, {
+        post(store().url, {
             onFinish: () => reset('password', 'password_confirmation'),
         });
     };

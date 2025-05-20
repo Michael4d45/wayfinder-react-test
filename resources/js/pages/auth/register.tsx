@@ -8,8 +8,7 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import AuthLayout from '@/layouts/auth-layout';
-import { register } from '@/routes/register';
-import { login } from '@/routes/login';
+import { login, register } from '@/routes';
 
 type RegisterForm = {
     name: string;
